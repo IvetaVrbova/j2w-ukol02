@@ -27,7 +27,7 @@ public class MainController {
     }
     @GetMapping("/")
     public ModelAndView vyberObrazekACitat() {
-        ModelAndView result = new ModelAndView("citat");
+        ModelAndView result = new ModelAndView("index");
         int citatCislo = random.nextInt(8);
         int obrazekCislo = random.nextInt(10);
 
