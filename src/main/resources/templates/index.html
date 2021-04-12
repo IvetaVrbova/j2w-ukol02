@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 
-<body th:style="${obrazek}">.
+<body th:style="'background-image:url(' + ${obrazek} + ');'" >
 <blockquote>
     <span th:text="${citat}">citat</span>
 </blockquote>

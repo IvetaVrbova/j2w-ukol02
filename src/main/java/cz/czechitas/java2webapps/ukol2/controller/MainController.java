@@ -29,7 +29,7 @@ public class MainController {
     public ModelAndView vyberObrazekACitat() {
         ModelAndView result = new ModelAndView("index");
         int citatCislo = random.nextInt(8);
-        int obrazekCislo = random.nextInt(10);
+        int obrazekCislo = random.nextInt(9)+1;
 
         result.addObject("citat", listOfQuotes.get(citatCislo));
         result.addObject("obrazek", String.format("/images/%d.jpg", obrazekCislo));
