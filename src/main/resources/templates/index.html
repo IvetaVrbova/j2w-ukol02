@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Citát dne</title>
@@ -8,10 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
-
-<body th:style="'background-image:url(' + ${obrazek} + ');'" >
-<blockquote>
-    <span th:text="${citat}">citat</span>
-</blockquote>
+<body th:style="'background-image:url(' + ${imageUrl} + ');'" >
+<blockquote th:text="${quotation}"></blockquote>
 </body>
 </html>
